@@ -10,6 +10,14 @@ def username_password():
     return [user_name, password]
 
 
+@pytest.fixture(scope="function")
+def wrong_username_password():
+    user_name = "hogehoge@gmail.com"
+    password = "12345"
+
+    return [user_name, password]
+
+
 @pytest.fixture(scope="module")
 def driver():
     _driver = webdriver.Chrome()
