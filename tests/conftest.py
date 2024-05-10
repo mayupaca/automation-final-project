@@ -18,7 +18,7 @@ def wrong_username_password():
     return [user_name, password]
 
 
-@pytest.fixture(scope="module")
+@pytest.fixture(scope="class")
 def driver():
     _driver = webdriver.Chrome()
     yield _driver
