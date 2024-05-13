@@ -10,4 +10,3 @@ class LoginPage(BasePage):
         self.find_element(LoginPageLocators.EMAIL_TXTBX).send_keys(user_name)
         self.find_element(LoginPageLocators.PASSWORD_TXTBX).send_keys(password)
         self.find_element(LoginPageLocators.LOGIN_BTN).click()
-

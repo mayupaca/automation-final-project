@@ -25,3 +25,11 @@ def driver():
     _driver.implicitly_wait(5)
     yield _driver
     _driver.quit()
+
+
+@pytest.fixture(scope="function")
+def search_item():
+    specific_item = "dango mini jute bag"
+    keyword_item = "bag"
+
+    return [specific_item, keyword_item]
