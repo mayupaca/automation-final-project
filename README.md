@@ -5,6 +5,7 @@ This is a final project MNLCT C-Women bridging program automation class. Using S
 ## Tests
 - Login
 - Search
+- Cart
 
 ## Technologies
 - Python
