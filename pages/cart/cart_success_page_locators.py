@@ -1,6 +1,7 @@
-# Your cart //*[@id="shopify-section-template--16887876911292__main"]/form/header/div[1]/h1
-
 from selenium.webdriver.common.by import By
 
+
 class CartSuccessPageLocators:
-    SUCCESS_MESSAGE = (By.XPATH, '//*[@id="cart-success-message"]')
+    ADD_SUCCESS_LBL = (By.XPATH, '//*[@id="shopify-section-template--16906036773052__main"]/form/header/div[1]/h1')
+
+    REMOVE_SUCCESS_LBL = (By.XPATH, '//*[@id="shopify-section-template--16906036773052__main"]/form/header/div[1]/h1')

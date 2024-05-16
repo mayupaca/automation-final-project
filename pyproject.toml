@@ -4,11 +4,16 @@ version = "0.1.0"
 description = ""
 authors = ["Mayu Suzumura <47727645+mayupaca@users.noreply.github.com>"]
 readme = "README.md"
+package-mode = false
 
 [tool.poetry.dependencies]
 python = "^3.12"
+selenium = "^4.20.0"
+python-dotenv = "^1.0.1"
 
+[tool.poetry.dev-dependencies]
+pytest = "^8.2.0"
 
 [build-system]
-requires = ["poetry-core"]
+requires = ["poetry-core>=1.0.0"]
 build-backend = "poetry.core.masonry.api"
