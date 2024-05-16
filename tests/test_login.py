@@ -3,17 +3,13 @@ from pages.login.login_page import LoginPage
 from pages.login.login_success_page import LoginSuccessPage
 from resources.constans import TEST_SITE_URL
 from pages.index_page import IndexPage
-import logging
 import time
-
-logging.basicConfig(level=logging.INFO)
 
 
 @pytest.mark.usefixtures("driver")
 class TestLogin:
 
     def test_wrong_login(self, driver, wrong_username_password):
-        logging.info("Starting test_wrong_login")
         login_page = LoginPage(driver)
         login_page.navigate_to(TEST_SITE_URL)
         time.sleep(3)
@@ -36,7 +32,6 @@ class TestLogin:
         time.sleep(3)
 
     def test_correct_login(self, driver, username_password):
-        logging.info("Starting test_correct_login")
         login_page = LoginPage(driver)
         login_page.navigate_to(TEST_SITE_URL)
         time.sleep(3)
